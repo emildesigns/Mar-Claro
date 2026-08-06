@@ -211,7 +211,7 @@ section {
   text-align: center;
   color: var(--blanco);
   background: linear-gradient(180deg, rgba(22, 66, 91, 0.55), rgba(22, 66, 91, 0.75)),
-    url("../img/hero/costa-hero.svg") center/cover no-repeat;
+    url("../img/hero/costa-hero.jpg") center/cover no-repeat;
   padding: 0 20px;
 }
 
