@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alojamientos Las Grutas | Departamentos frente al mar</title>
+  <meta
+    name="description"
+    content="Departamentos en alquiler en Las Grutas, Río Negro. Fotos, ubicación y toda la info del pueblo: dónde comer, heladerías, confiterías y juegos para niños."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#inicio" class="nav__logo">🌊 <span id="nombre-sitio-nav">Alojamientos Las Grutas</span></a>
+
+      <button class="nav__toggle" id="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" id="nav-links">
+        <a href="#departamentos">Departamentos</a>
+        <a href="#costa">La costa</a>
+        <a href="#pueblo">El pueblo</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto" class="nav__whatsapp" data-whatsapp-general target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__contenido">
+      <h1>Tu estadía en Las Grutas empieza acá</h1>
+      <p>
+        Departamentos a metros del mar, en la costa de Río Negro. Mar cálido,
+        acantilados y todo lo que necesitás para unas vacaciones tranquilas.
+      </p>
+      <div class="hero__botones">
+        <a href="#departamentos" class="btn btn--primario">Ver departamentos</a>
+        <a href="#contacto" class="btn btn--outline" data-whatsapp-general target="_blank" rel="noopener">
+          Consultar disponibilidad
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPARTAMENTOS -->
+  <section class="departamentos" id="departamentos">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Nuestros departamentos</h2>
+      <p class="subtitulo-seccion">
+        Opciones para parejas, familias y grupos. Tocá una foto para ver la galería completa.
+      </p>
+      <div class="departamentos-grid" id="departamentos-grid"></div>
+    </div>
+  </section>
+
+  <!-- COSTA / PANORAMICAS -->
+  <section class="costa" id="costa">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">La costa de Las Grutas</h2>
+      <p class="subtitulo-seccion">
+        Aguas cálidas, acantilados y atardeceres para disfrutar todos los días.
+      </p>
+      <div class="panoramicas-grid" id="panoramicas-grid"></div>
+    </div>
+  </section>
+
+  <!-- PUEBLO / INFO LOCAL -->
+  <section class="pueblo" id="pueblo">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Conocé el pueblo</h2>
+      <p class="subtitulo-seccion">
+        Todo lo que hay cerca para comer, tomar algo dulce y pasarla bien en familia.
+      </p>
+
+      <div class="pueblo-categoria">
+        <h3>🍽️ Dónde comer</h3>
+        <div class="lugares-grid" id="lugares-comer"></div>
+      </div>
+
+      <div class="pueblo-categoria">
+        <h3>🍦 Heladerías</h3>
+        <div class="lugares-grid" id="lugares-helados"></div>
+      </div>
+
+      <div class="pueblo-categoria">
+        <h3>☕ Confiterías y cafés</h3>
+        <div class="lugares-grid" id="lugares-confiterias"></div>
+      </div>
+
+      <div class="pueblo-categoria">
+        <h3>🎠 Juegos para niños</h3>
+        <div class="lugares-grid" id="lugares-ninos"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACION -->
+  <section class="ubicacion" id="ubicacion">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Cómo llegar</h2>
+      <p class="subtitulo-seccion">Las Grutas, partido de San Antonio, Río Negro, Argentina.</p>
+      <iframe
+        src="https://www.google.com/maps?q=Las%20Grutas,%20R%C3%ADo%20Negro&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa de Las Grutas"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">¿Consultas o reservas?</h2>
+      <p class="subtitulo-seccion">Escribinos por WhatsApp y te respondemos a la brevedad.</p>
+      <a href="#" class="btn btn--primario" data-whatsapp-general target="_blank" rel="noopener">
+        💬 Escribir por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="contenedor">
+      <p><strong id="nombre-sitio-footer">Alojamientos Las Grutas</strong></p>
+      <p>Las Grutas, Río Negro, Argentina</p>
+      <p>© <span id="anio-actual"></span> Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BOTON FLOTANTE WHATSAPP -->
+  <a href="#" class="whatsapp-flotante" data-whatsapp-general target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    💬
+  </a>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__cerrar" id="lightbox-cerrar" aria-label="Cerrar">✕</button>
+    <button class="lightbox__prev" id="lightbox-prev" aria-label="Anterior">‹</button>
+    <img src="" alt="" class="lightbox__img" id="lightbox-img" />
+    <button class="lightbox__next" id="lightbox-next" aria-label="Siguiente">›</button>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

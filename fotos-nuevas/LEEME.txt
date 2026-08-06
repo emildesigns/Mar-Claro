@@ -1,0 +1,28 @@
+COMO SUBIR TUS FOTOS
+=====================
+
+1. Copiá tus fotos (jpg, png o webp) dentro de la carpeta que corresponda:
+
+   fotos-nuevas/hero/              -> 1 foto para la portada principal del sitio
+   fotos-nuevas/panoramica/        -> fotos panoramicas de la costa (podés poner varias)
+   fotos-nuevas/depto-1/           -> fotos del departamento 1 (Depto Vista al Mar I)
+   fotos-nuevas/depto-2/           -> fotos del departamento 2 (Depto Vista al Mar II)
+   fotos-nuevas/depto-3/           -> fotos del departamento 3 (Departamento Bahía)
+   fotos-nuevas/depto-4/           -> fotos del departamento 4 (Depto Los Acantilados)
+   fotos-nuevas/depto-5/           -> fotos del departamento 5 (Depto Costa Azul)
+   fotos-nuevas/pueblo-comer/      -> foto de restaurantes / donde comer
+   fotos-nuevas/pueblo-helados/    -> foto de heladerías
+   fotos-nuevas/pueblo-confiterias/-> foto de confiterías / cafés
+   fotos-nuevas/pueblo-ninos/      -> foto de juegos para niños
+
+2. No importa el nombre que tengan los archivos (IMG_001.jpg, foto.png, etc.),
+   ni cuántas pongas por carpeta. Yo las renombro y las acomodo.
+
+3. Si tenés más de 5 departamentos para cargar, creá carpetas nuevas
+   (depto-6, depto-7...) y contame qué depto es cada una (nombre, capacidad,
+   ubicación, descripción corta) para poder cargarlo en el sitio.
+
+4. Cuando termines de copiar, avisame en el chat y yo me encargo de:
+   - Optimizar y mover las fotos a la carpeta img/ del sitio
+   - Actualizar js/data.js con los nombres de archivo correctos
+   - Borrar esta carpeta fotos-nuevas una vez que esté todo migrado
