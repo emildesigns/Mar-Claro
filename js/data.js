@@ -128,9 +128,27 @@ const DEPARTAMENTOS = [
 // FOTOS PANORÁMICAS DE LA COSTA
 // -----------------------------
 const PANORAMICAS = [
-  { src: "img/panoramica/panoramica-1.svg", alt: "Vista panorámica de la costa de Las Grutas" },
-  { src: "img/panoramica/panoramica-2.svg", alt: "Playa de Las Grutas al atardecer" },
-  { src: "img/panoramica/panoramica-3.svg", alt: "Acantilados de Las Grutas" },
+  { src: "img/panoramica/playa-1.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-2.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-3.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-4.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-5.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-6.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-7.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-8.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-9.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-10.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-11.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-12.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-13.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-14.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-15.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-16.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-17.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-18.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-19.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-20.jpg", alt: "Playa de Las Grutas" },
+  { src: "img/panoramica/playa-21.jpg", alt: "Playa de Las Grutas" },
 ];
 
 // -----------------------------
