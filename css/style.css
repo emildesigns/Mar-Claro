@@ -84,6 +84,7 @@ section {
   border-radius: 50px;
   font-weight: 600;
   font-size: 0.95rem;
+  font-family: inherit;
   cursor: pointer;
   border: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -150,7 +151,7 @@ section {
 
 @media (min-width: 801px) {
   .nav__logo img {
-    height: 26px;
+    height: 78px;
   }
 }
 
@@ -373,27 +374,6 @@ section {
   font-weight: 600;
   padding: 4px 10px;
   border-radius: 50px;
-}
-
-/* =========================================
-   BOTON INFO ALOJAMIENTO
-   ========================================= */
-.info-cta {
-  padding: 48px 20px;
-  text-align: center;
-  background: var(--arena);
-}
-
-.btn--info {
-  background: linear-gradient(135deg, var(--azul-claro), var(--azul-profundo));
-  color: var(--blanco);
-  font-size: 1.05rem;
-  padding: 18px 36px;
-  box-shadow: 0 10px 26px rgba(22, 66, 91, 0.3);
-}
-
-.btn--info:hover {
-  box-shadow: 0 14px 30px rgba(22, 66, 91, 0.4);
 }
 
 /* =========================================
