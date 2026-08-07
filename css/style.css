@@ -376,6 +376,116 @@ section {
 }
 
 /* =========================================
+   BOTON INFO ALOJAMIENTO
+   ========================================= */
+.info-cta {
+  padding: 48px 20px;
+  text-align: center;
+  background: var(--arena);
+}
+
+.btn--info {
+  background: linear-gradient(135deg, var(--azul-claro), var(--azul-profundo));
+  color: var(--blanco);
+  font-size: 1.05rem;
+  padding: 18px 36px;
+  box-shadow: 0 10px 26px rgba(22, 66, 91, 0.3);
+}
+
+.btn--info:hover {
+  box-shadow: 0 14px 30px rgba(22, 66, 91, 0.4);
+}
+
+/* =========================================
+   MODAL INFO ALOJAMIENTO
+   ========================================= */
+.modal-info {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 20, 30, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  padding: 20px;
+}
+
+.modal-info.activo {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-info__contenido {
+  position: relative;
+  background: var(--blanco);
+  border-radius: var(--radio);
+  max-width: 640px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.modal-info__contenido h2 {
+  color: var(--azul-profundo);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.modal-info__contenido h3 {
+  color: var(--azul-profundo);
+  font-size: 1.05rem;
+  margin: 22px 0 8px;
+}
+
+.modal-info__contenido p {
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.modal-info__contenido ul {
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.modal-info__contenido li {
+  margin-bottom: 4px;
+}
+
+.modal-info__contenido .btn--whatsapp {
+  margin-top: 24px;
+}
+
+.modal-info__cerrar {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--arena);
+  color: var(--azul-profundo);
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.modal-info__cerrar:hover {
+  background: var(--arena-oscura);
+}
+
+/* =========================================
    PANORAMICAS
    ========================================= */
 .panoramicas-grid {

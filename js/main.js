@@ -15,7 +15,37 @@ document.addEventListener("DOMContentLoaded", () => {
   setupLightbox();
   setupMenuMobile();
   setupHeroVideo();
+  setupModalInfo();
 });
+
+// ---------- Modal de información del alojamiento ----------
+function setupModalInfo() {
+  const btnAbrir = document.getElementById("btn-info-alojamiento");
+  const modal = document.getElementById("modal-info");
+  const btnCerrar = document.getElementById("modal-info-cerrar");
+  if (!btnAbrir || !modal || !btnCerrar) return;
+
+  function abrir() {
+    modal.classList.add("activo");
+    document.body.classList.add("no-scroll");
+  }
+
+  function cerrar() {
+    modal.classList.remove("activo");
+    document.body.classList.remove("no-scroll");
+  }
+
+  btnAbrir.addEventListener("click", abrir);
+  btnCerrar.addEventListener("click", cerrar);
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) cerrar();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.classList.contains("activo")) cerrar();
+  });
+}
 
 // ---------- Video de portada (solo mobile) ----------
 function setupHeroVideo() {

@@ -83,6 +83,15 @@
     </div>
   </section>
 
+  <!-- BOTON INFO ALOJAMIENTO -->
+  <div class="info-cta">
+    <div class="contenedor">
+      <button class="btn btn--info" id="btn-info-alojamiento">
+        📋 Información sobre el alojamiento
+      </button>
+    </div>
+  </div>
+
   <!-- COSTA / PANORAMICAS -->
   <section class="costa" id="costa">
     <div class="contenedor">
@@ -128,12 +137,12 @@
   <section class="ubicacion" id="ubicacion">
     <div class="contenedor">
       <h2 class="titulo-seccion">Cómo llegar</h2>
-      <p class="subtitulo-seccion">Las Grutas, partido de San Antonio, Río Negro, Argentina.</p>
+      <p class="subtitulo-seccion">Arroyo Salado 239, Las Grutas, Río Negro, Argentina.</p>
       <iframe
-        src="https://www.google.com/maps?q=Las%20Grutas,%20R%C3%ADo%20Negro&output=embed"
+        src="https://www.google.com/maps?q=-40.7993473,-65.0669793&z=17&hl=es&output=embed"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        title="Mapa de Las Grutas"
+        title="Mapa de Mar Claro - Arroyo Salado 239, Las Grutas"
       ></iframe>
     </div>
   </section>
@@ -169,6 +178,71 @@
     <button class="lightbox__prev" id="lightbox-prev" aria-label="Anterior">‹</button>
     <img src="" alt="" class="lightbox__img" id="lightbox-img" />
     <button class="lightbox__next" id="lightbox-next" aria-label="Siguiente">›</button>
+  </div>
+
+  <!-- MODAL INFO ALOJAMIENTO -->
+  <div class="modal-info" id="modal-info">
+    <div class="modal-info__contenido">
+      <button class="modal-info__cerrar" id="modal-info-cerrar" aria-label="Cerrar">✕</button>
+      <h2>Información sobre el alojamiento</h2>
+
+      <h3>📍 Ubicación</h3>
+      <p>
+        Estamos a 50 metros de la bajada al mar en Parador <strong>"La Rinconada"</strong>,
+        la única playa habilitada para ir con mascotas (Pet-Friendly).
+      </p>
+      <p>
+        Estamos en un barrio residencial con seguridad privada, ya que somos un
+        consorcio habitacional.
+      </p>
+
+      <h3>🏠 Los departamentos están equipados con</h3>
+      <ul>
+        <li>DirecTV</li>
+        <li>Wifi</li>
+        <li>Aire acondicionado split en el dormitorio</li>
+        <li>Baño completo con secador de cabello</li>
+        <li>Cocina totalmente equipada, con vajilla de cocina y de mesa</li>
+        <li>Microondas</li>
+        <li>Pava eléctrica</li>
+        <li>2 reposeras de playa</li>
+      </ul>
+
+      <h3>🔥 Cada departamento cuenta con su propio asador, con</h3>
+      <ul>
+        <li>Iluminación</li>
+        <li>Parrilla</li>
+        <li>Elementos de asado</li>
+        <li>Cepillo para limpieza de parrilla</li>
+      </ul>
+
+      <h3>🚗 Estacionamiento</h3>
+      <p>Cubierto y propio para cada departamento, en playa privada.</p>
+
+      <h3>🧺 Ropa de cama y de baño</h3>
+      <p>
+        No se entrega ropa de cama ni de baño. Cada departamento cuenta con
+        cubrecamas y frazadas; en caso de urgencia o necesidad, consultanos.
+      </p>
+
+      <h3>🎁 Promoción</h3>
+      <p>10% de descuento en estadías mayores a 10 noches.</p>
+
+      <h3>💳 Forma de pago</h3>
+      <p>
+        La reserva se realiza con el 30% del total; el saldo se abona al ingresar
+        al complejo. También puede acordarse en pagos mensuales.
+      </p>
+
+      <a
+        class="btn btn--whatsapp"
+        target="_blank"
+        rel="noopener"
+        data-whatsapp-general
+      >
+        Consultar por WhatsApp
+      </a>
+    </div>
   </div>
 
   <script src="js/data.js"></script>
