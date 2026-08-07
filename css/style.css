@@ -495,57 +495,55 @@ section {
   background: var(--arena);
 }
 
-.pueblo-categoria {
-  margin-bottom: 48px;
-}
-
-.pueblo-categoria:last-child {
-  margin-bottom: 0;
-}
-
-.pueblo-categoria h3 {
-  color: var(--azul-profundo);
-  font-size: 1.4rem;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.lugares-grid {
+.enlaces-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
+  gap: 24px;
 }
 
-.card-lugar {
+.card-enlace {
   background: var(--blanco);
   border-radius: var(--radio);
-  overflow: hidden;
   box-shadow: var(--sombra);
+  padding: 28px 24px;
+  text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.card-lugar img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
+.card-enlace__icono {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
 }
 
-.card-lugar__info {
-  padding: 16px;
-}
-
-.card-lugar__info h4 {
+.card-enlace h3 {
   color: var(--azul-profundo);
-  margin-bottom: 6px;
-  font-size: 1.02rem;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
 }
 
-.card-lugar__info p {
+.card-enlace p {
   color: var(--texto-suave);
-  font-size: 0.88rem;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.card-enlace__btn {
+  display: inline-block;
+  background: var(--azul-claro);
+  color: var(--blanco);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 24px;
+  border-radius: 50px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.card-enlace__btn:hover {
+  background: var(--azul-profundo);
+  transform: translateY(-2px);
 }
 
 /* =========================================

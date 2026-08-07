@@ -141,35 +141,23 @@ function renderPanoramicas() {
   ).join("");
 }
 
-// ---------- Lugares del pueblo ----------
+// ---------- Enlaces del pueblo ----------
 function renderLugares() {
-  const categorias = [
-    { id: "comer", contenedor: "lugares-comer" },
-    { id: "helados", contenedor: "lugares-helados" },
-    { id: "confiterias", contenedor: "lugares-confiterias" },
-    { id: "ninos", contenedor: "lugares-ninos" },
-  ];
+  const el = document.getElementById("enlaces-pueblo-grid");
+  if (!el) return;
 
-  categorias.forEach(({ id, contenedor }) => {
-    const el = document.getElementById(contenedor);
-    if (!el) return;
-
-    const items = LUGARES.filter((l) => l.categoria === id);
-
-    el.innerHTML = items
-      .map(
-        (lugar) => `
-        <div class="card-lugar">
-          <img src="${lugar.imagen}" alt="${lugar.nombre}" loading="lazy" />
-          <div class="card-lugar__info">
-            <h4>${lugar.nombre}</h4>
-            <p>${lugar.descripcion}</p>
-          </div>
-        </div>
-      `
-      )
-      .join("");
-  });
+  el.innerHTML = ENLACES_PUEBLO.map(
+    (enlace) => `
+      <div class="card-enlace">
+        <span class="card-enlace__icono">${enlace.icono}</span>
+        <h3>${enlace.titulo}</h3>
+        <p>${enlace.descripcion}</p>
+        <a class="card-enlace__btn" href="${enlace.url}" target="_blank" rel="noopener">
+          Click aquí
+        </a>
+      </div>
+    `
+  ).join("");
 }
 
 // ---------- Lightbox ----------

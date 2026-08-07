@@ -152,57 +152,39 @@ const PANORAMICAS = [
 ];
 
 // -----------------------------
-// LUGARES DEL PUEBLO
+// ENLACES DEL PUEBLO
 // -----------------------------
-// categoria puede ser: "comer", "helados", "confiterias", "ninos"
-// Para agregar un lugar nuevo, sumá un objeto a este array.
-const LUGARES = [
+// Guías externas (TripAdvisor, turismo oficial, etc). Para agregar una,
+// sumá un objeto con icono, título, descripción y la url de destino.
+const ENLACES_PUEBLO = [
   {
-    categoria: "comer",
-    nombre: "Parrilla El Pescador",
-    descripcion: "Pescados y mariscos frescos frente al mar.",
-    imagen: "img/pueblo/comer.svg",
+    icono: "🍽️",
+    titulo: "Restaurantes",
+    descripcion: "Todos los restaurantes de Las Grutas, con reseñas y calificaciones de turistas.",
+    url: "https://www.tripadvisor.com.ar/Restaurants-g312847-Las_Grutas_Province_of_Rio_Negro_Patagonia.html",
   },
   {
-    categoria: "comer",
-    nombre: "La Rastra",
-    descripcion: "Cocina regional patagónica, ambiente familiar.",
-    imagen: "img/pueblo/comer.svg",
+    icono: "☕",
+    titulo: "Cafés y confiterías",
+    descripcion: "Los mejores lugares para tomar un café o merendar en Las Grutas.",
+    url: "https://www.tripadvisor.com.ar/Restaurants-g312847-c8-Las_Grutas_Province_of_Rio_Negro_Patagonia.html",
   },
   {
-    categoria: "helados",
-    nombre: "Heladería Costa Azul",
-    descripcion: "Helados artesanales, gran variedad de sabores.",
-    imagen: "img/pueblo/helados.svg",
+    icono: "🎡",
+    titulo: "Qué hacer",
+    descripcion: "Actividades y atracciones para disfrutar en el pueblo y sus alrededores.",
+    url: "https://www.tripadvisor.com.ar/Attractions-g312847-Activities-zft11306-Las_Grutas_Province_of_Rio_Negro_Patagonia.html",
   },
   {
-    categoria: "helados",
-    nombre: "Heladería del Puerto",
-    descripcion: "Clásico del pueblo, abierto todo el año.",
-    imagen: "img/pueblo/helados.svg",
+    icono: "🍦",
+    titulo: "Heladería recomendada",
+    descripcion: "Fiore Helados, una de las heladerías mejor calificadas de Las Grutas.",
+    url: "https://www.tripadvisor.com.ar/Restaurant_Review-g312847-d16204932-Reviews-Fiore_Helados-Las_Grutas_Province_of_Rio_Negro_Patagonia.html",
   },
   {
-    categoria: "confiterias",
-    nombre: "Confitería Las Dunas",
-    descripcion: "Café de especialidad, tortas y meriendas.",
-    imagen: "img/pueblo/confiterias.svg",
-  },
-  {
-    categoria: "confiterias",
-    nombre: "Café del Mar",
-    descripcion: "Buen lugar para desayunar con vista a la costa.",
-    imagen: "img/pueblo/confiterias.svg",
-  },
-  {
-    categoria: "ninos",
-    nombre: "Parque de Juegos Costanera",
-    descripcion: "Juegos al aire libre sobre la costanera.",
-    imagen: "img/pueblo/ninos.svg",
-  },
-  {
-    categoria: "ninos",
-    nombre: "Peloteros Las Grutas",
-    descripcion: "Espacio cubierto para los más chicos, ideal días de viento.",
-    imagen: "img/pueblo/ninos.svg",
+    icono: "🏖️",
+    titulo: "Turismo oficial",
+    descripcion: "Toda la información oficial de turismo de Las Grutas.",
+    url: "https://lasgrutasturismo.gob.ar/",
   },
 ];
