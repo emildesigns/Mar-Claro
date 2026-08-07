@@ -15,7 +15,24 @@ document.addEventListener("DOMContentLoaded", () => {
   renderLugares();
   setupLightbox();
   setupMenuMobile();
+  setupHeroVideo();
 });
+
+// ---------- Video de portada (solo mobile) ----------
+function setupHeroVideo() {
+  const video = document.getElementById("hero-video");
+  if (!video) return;
+
+  const esMobile = window.matchMedia("(max-width: 800px)").matches;
+  if (!esMobile) return;
+
+  const source = document.createElement("source");
+  source.src = "img/hero/video-hero.mp4";
+  source.type = "video/mp4";
+  video.appendChild(source);
+  video.load();
+  video.play().catch(() => {});
+}
 
 // ---------- WhatsApp ----------
 function linkWhatsapp(mensaje) {
