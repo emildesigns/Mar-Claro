@@ -10,7 +10,7 @@
 const WHATSAPP_NUMERO = "5492920322506";
 
 // Nombre del emprendimiento (aparece en el header, footer y título)
-const NOMBRE_SITIO = "Alojamientos Las Grutas";
+const NOMBRE_SITIO = "Mar Claro";
 
 // -----------------------------
 // DEPARTAMENTOS

@@ -138,13 +138,14 @@ section {
 }
 
 .nav__logo {
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: var(--azul-profundo);
+  display: flex;
+  align-items: center;
 }
 
-.nav__logo span {
-  color: var(--azul-claro);
+.nav__logo img {
+  height: 52px;
+  width: auto;
+  display: block;
 }
 
 .nav__links {

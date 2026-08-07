@@ -5,7 +5,6 @@
 */
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("nombre-sitio-nav").textContent = NOMBRE_SITIO;
   document.getElementById("nombre-sitio-footer").textContent = NOMBRE_SITIO;
   document.getElementById("anio-actual").textContent = new Date().getFullYear();
 
