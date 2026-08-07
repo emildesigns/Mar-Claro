@@ -148,6 +148,12 @@ section {
   display: block;
 }
 
+@media (min-width: 801px) {
+  .nav__logo img {
+    height: 26px;
+  }
+}
+
 .nav__links {
   display: flex;
   align-items: center;
