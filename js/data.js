@@ -20,13 +20,13 @@ const NOMBRE_SITIO = "Mar Claro";
 const DEPARTAMENTOS = [
   {
     id: 1,
-    nombre: "Depto Vista al Mar I",
-    capacidad: 4,
-    ambientes: "1 dormitorio + living comedor",
+    nombre: "Depto 1",
+    capacidad: 5,
+    ambientes: "2 dormitorios",
     ubicacion: "A 2 cuadras de la playa Piedras Coloradas",
     descripcion:
-      "Departamento luminoso con balcón, totalmente equipado para 4 personas. Ideal para parejas o familias chicas que buscan estar cerca del mar.",
-    comodidades: ["Wifi", "Cochera", "Ropa de cama incluida", "Balcón"],
+      "Departamento luminoso con balcón, totalmente equipado para 5 personas. Ideal para familias o grupos que buscan estar cerca del mar.",
+    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV"],
     fotos: [
       "img/departamentos/depto-1/1.jpg",
       "img/departamentos/depto-1/2.jpg",
@@ -46,7 +46,7 @@ const DEPARTAMENTOS = [
     ubicacion: "A 3 cuadras del centro comercial",
     descripcion:
       "Amplio y cómodo para hasta 6 personas, a pasos de restaurantes y heladerías. Perfecto para grupos familiares.",
-    comodidades: ["Wifi", "Cochera", "Aire acondicionado", "Cocina completa"],
+    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV"],
     fotos: [
       "img/departamentos/depto-2/1.jpg",
       "img/departamentos/depto-2/2.jpg",
@@ -66,7 +66,7 @@ const DEPARTAMENTOS = [
     ubicacion: "Frente al mar, zona Balneario Las Grutas",
     descripcion:
       "Monoambiente acogedor con vista al mar, pensado para parejas. A metros de la bajada a la playa.",
-    comodidades: ["Wifi", "Vista al mar", "Ropa de cama incluida"],
+    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV"],
     fotos: [
       "img/departamentos/depto-3/1.jpg",
       "img/departamentos/depto-3/2.jpg",
@@ -86,7 +86,7 @@ const DEPARTAMENTOS = [
     ubicacion: "Zona de los acantilados, a 5 cuadras del centro",
     descripcion:
       "Ideal para grupos de amigos o familias, con espacio exterior y parrilla compartida.",
-    comodidades: ["Wifi", "Parrilla", "Cochera", "Patio"],
+    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV"],
     fotos: [
       "img/departamentos/depto-4/1.jpg",
       "img/departamentos/depto-4/2.jpg",
@@ -105,7 +105,7 @@ const DEPARTAMENTOS = [
     ubicacion: "A 4 cuadras de la playa, cerca de la lobería",
     descripcion:
       "Departamento renovado, tranquilo, ideal para descansar cerca de la naturaleza y la costa.",
-    comodidades: ["Wifi", "Cochera", "Cocina completa", "Ropa de cama incluida"],
+    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV"],
     fotos: [
       "img/departamentos/depto-5/1.jpg",
       "img/departamentos/depto-5/2.jpg",
@@ -173,7 +173,7 @@ const ENLACES_PUEBLO = [
     icono: "🎡",
     titulo: "Qué hacer",
     descripcion: "Actividades y atracciones para disfrutar en el pueblo y sus alrededores.",
-    url: "https://www.tripadvisor.com.ar/Attractions-g312847-Activities-zft11306-Las_Grutas_Province_of_Rio_Negro_Patagonia.html",
+    url: "https://www.tripadvisor.com.ar/Attractions-g312847-Activities-Las_Grutas_Province_of_Rio_Negro_Patagonia.html",
   },
   {
     icono: "🍦",
