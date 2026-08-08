@@ -40,12 +40,12 @@ const DEPARTAMENTOS = [
   },
   {
     id: 2,
-    nombre: "Depto Vista al Mar II",
-    capacidad: 6,
-    ambientes: "2 dormitorios + living comedor",
+    nombre: "Depto 2",
+    capacidad: 3,
+    ambientes: "1 dormitorio + cama living",
     ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
-      "Amplio y cómodo para hasta 6 personas, a pasos de restaurantes y heladerías. Perfecto para grupos familiares.",
+      "Departamento cómodo y luminoso para 3 personas, en una zona muy tranquila, sin ruido de bares ni boliches cercanos. Ideal para descansar.",
     comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV"],
     fotos: [
       "img/departamentos/depto-2/1.jpg",
@@ -60,12 +60,12 @@ const DEPARTAMENTOS = [
   },
   {
     id: 3,
-    nombre: "Departamento Bahía",
-    capacidad: 2,
-    ambientes: "Monoambiente",
+    nombre: "Depto 3",
+    capacidad: 4,
+    ambientes: "1 dormitorio + cama living",
     ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
-      "Monoambiente acogedor con vista al mar, pensado para parejas. A metros de la bajada a la playa.",
+      "Departamento acogedor para 4 personas, en una zona residencial muy tranquila, sin ruido de bares ni boliches cercanos. Ideal para descansar en familia.",
     comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV"],
     fotos: [
       "img/departamentos/depto-3/1.jpg",
@@ -80,9 +80,9 @@ const DEPARTAMENTOS = [
   },
   {
     id: 4,
-    nombre: "Depto Los Acantilados",
-    capacidad: 5,
-    ambientes: "2 dormitorios + living comedor",
+    nombre: "Depto 4",
+    capacidad: 4,
+    ambientes: "2 dormitorios",
     ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
       "Ideal para grupos de amigos o familias, con espacio exterior y parrilla compartida.",
@@ -99,9 +99,9 @@ const DEPARTAMENTOS = [
   },
   {
     id: 5,
-    nombre: "Depto Costa Azul",
-    capacidad: 4,
-    ambientes: "1 dormitorio + living comedor con sofá cama",
+    nombre: "Depto 5",
+    capacidad: 6,
+    ambientes: "2 dormitorios",
     ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
       "Departamento renovado, tranquilo, ideal para descansar cerca de la naturaleza y la costa.",
