@@ -187,4 +187,16 @@ const ENLACES_PUEBLO = [
     descripcion: "Toda la información oficial de turismo de Las Grutas.",
     url: "https://lasgrutasturismo.gob.ar/",
   },
+  {
+    icono: "🏝️",
+    titulo: "Playa recomendada: Punta Perdices",
+    descripcion: "Una playa escondida de aguas turquesas y arena blanca, a 65 km de Las Grutas. El \"caribe patagónico\".",
+    url: "https://www.interpatagonia.com/lasgrutas/punta-perdices.html",
+  },
+  {
+    icono: "🌊",
+    titulo: "Tabla de mareas",
+    descripcion: "Horarios de marea alta y baja en Las Grutas, para planificar el día de playa.",
+    url: "https://www.lasgrutasrionegro.com.ar/tabla-de-mareas/",
+  },
 ];
