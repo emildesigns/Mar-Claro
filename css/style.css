@@ -179,6 +179,20 @@ section {
   font-weight: 600;
 }
 
+.nav__whatsapp-grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.nav__firma {
+  font-size: 0.7rem;
+  color: var(--texto-suave);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
 .nav__toggle {
   display: none;
   flex-direction: column;
@@ -205,6 +219,37 @@ section {
 }
 .nav__toggle.activo span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+}
+
+/* =========================================
+   BANNER PROMOCION (marquee)
+   ========================================= */
+.promo-marquee {
+  background: linear-gradient(90deg, var(--azul-claro), var(--azul-profundo));
+  color: var(--blanco);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.promo-marquee__track {
+  display: inline-flex;
+  animation: promo-marquee-mover 24s linear infinite;
+}
+
+.promo-marquee__track span {
+  padding: 0 40px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+@keyframes promo-marquee-mover {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 /* =========================================
