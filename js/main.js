@@ -211,6 +211,33 @@ function setupLightbox() {
     if (e.key === "ArrowLeft") mostrar(-1);
     if (e.key === "ArrowRight") mostrar(1);
   });
+
+  // Deslizar con el dedo (swipe) para pasar de foto en mobile
+  let toqueInicioX = 0;
+  const UMBRAL_SWIPE = 40;
+
+  lightbox.addEventListener(
+    "touchstart",
+    (e) => {
+      toqueInicioX = e.touches[0].clientX;
+    },
+    { passive: true }
+  );
+
+  lightbox.addEventListener(
+    "touchend",
+    (e) => {
+      const toqueFinX = e.changedTouches[0].clientX;
+      const diferencia = toqueFinX - toqueInicioX;
+      if (Math.abs(diferencia) < UMBRAL_SWIPE) return;
+      if (diferencia < 0) {
+        mostrar(1);
+      } else {
+        mostrar(-1);
+      }
+    },
+    { passive: true }
+  );
 }
 
 // ---------- Menú mobile ----------

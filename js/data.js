@@ -26,7 +26,7 @@ const DEPARTAMENTOS = [
     ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
       "Departamento luminoso, totalmente equipado para 5 personas. Ideal para familias o grupos que buscan estar cerca del mar.",
-    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV"],
+    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV", "Estacionamiento techado"],
     fotos: [
       "img/departamentos/depto-1/1.jpg",
       "img/departamentos/depto-1/2.jpg",
@@ -46,7 +46,7 @@ const DEPARTAMENTOS = [
     ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
       "Departamento cómodo y luminoso para 3 personas, en una zona muy tranquila, sin ruido de bares ni boliches cercanos. Ideal para descansar.",
-    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV", "Aire acondicionado"],
+    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV", "Aire acondicionado", "Estacionamiento techado"],
     fotos: [
       "img/departamentos/depto-2/1.jpg",
       "img/departamentos/depto-2/2.jpg",
@@ -65,8 +65,8 @@ const DEPARTAMENTOS = [
     ambientes: "1 dormitorio",
     ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
-      "Departamento acogedor para 4 personas, en una zona residencial muy tranquila, sin ruido de bares ni boliches cercanos. Ideal para descansar en familia.",
-    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV", "Aire acondicionado"],
+      "Departamento amplio, con dormitorio sommier queen, ideal para un placentero descanso.",
+    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV", "Aire acondicionado", "Estacionamiento techado"],
     fotos: [
       "img/departamentos/depto-3/1.jpg",
       "img/departamentos/depto-3/2.jpg",
@@ -86,7 +86,7 @@ const DEPARTAMENTOS = [
     ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
       "Ideal para grupos de amigos o familias, con espacio exterior y parrilla privada.",
-    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV", "Aire acondicionado"],
+    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV", "Aire acondicionado", "Estacionamiento techado"],
     fotos: [
       "img/departamentos/depto-4/1.jpg",
       "img/departamentos/depto-4/2.jpg",
@@ -105,7 +105,7 @@ const DEPARTAMENTOS = [
     ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
       "Departamento renovado, tranquilo, ideal para descansar cerca de la naturaleza y la costa.",
-    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV", "Aire acondicionado"],
+    comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV", "Aire acondicionado", "Estacionamiento techado"],
     fotos: [
       "img/departamentos/depto-5/1.jpg",
       "img/departamentos/depto-5/2.jpg",
