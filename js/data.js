@@ -23,9 +23,9 @@ const DEPARTAMENTOS = [
     nombre: "Depto 1",
     capacidad: 5,
     ambientes: "2 dormitorios",
-    ubicacion: "A 2 cuadras de la playa Piedras Coloradas",
+    ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
-      "Departamento luminoso con balcón, totalmente equipado para 5 personas. Ideal para familias o grupos que buscan estar cerca del mar.",
+      "Departamento luminoso, totalmente equipado para 5 personas. Ideal para familias o grupos que buscan estar cerca del mar.",
     comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV"],
     fotos: [
       "img/departamentos/depto-1/1.jpg",
@@ -43,7 +43,7 @@ const DEPARTAMENTOS = [
     nombre: "Depto Vista al Mar II",
     capacidad: 6,
     ambientes: "2 dormitorios + living comedor",
-    ubicacion: "A 3 cuadras del centro comercial",
+    ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
       "Amplio y cómodo para hasta 6 personas, a pasos de restaurantes y heladerías. Perfecto para grupos familiares.",
     comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV"],
@@ -63,7 +63,7 @@ const DEPARTAMENTOS = [
     nombre: "Departamento Bahía",
     capacidad: 2,
     ambientes: "Monoambiente",
-    ubicacion: "Frente al mar, zona Balneario Las Grutas",
+    ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
       "Monoambiente acogedor con vista al mar, pensado para parejas. A metros de la bajada a la playa.",
     comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV"],
@@ -83,7 +83,7 @@ const DEPARTAMENTOS = [
     nombre: "Depto Los Acantilados",
     capacidad: 5,
     ambientes: "2 dormitorios + living comedor",
-    ubicacion: "Zona de los acantilados, a 5 cuadras del centro",
+    ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
       "Ideal para grupos de amigos o familias, con espacio exterior y parrilla compartida.",
     comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV"],
@@ -102,7 +102,7 @@ const DEPARTAMENTOS = [
     nombre: "Depto Costa Azul",
     capacidad: 4,
     ambientes: "1 dormitorio + living comedor con sofá cama",
-    ubicacion: "A 4 cuadras de la playa, cerca de la lobería",
+    ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
       "Departamento renovado, tranquilo, ideal para descansar cerca de la naturaleza y la costa.",
     comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV"],
