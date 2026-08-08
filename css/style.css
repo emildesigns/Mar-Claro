@@ -796,6 +796,10 @@ section {
     padding: 56px 0;
   }
 
+  .hero-bg {
+    display: none;
+  }
+
   .hero-video {
     display: block;
   }
