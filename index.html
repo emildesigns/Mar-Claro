@@ -175,14 +175,11 @@
     <div class="contenedor">
       <h2 class="titulo-seccion">Conocé Las Grutas</h2>
       <p class="subtitulo-seccion">Así es el Caribe de Río Negro.</p>
-      <div class="video-embed">
-        <iframe
-          src="https://www.youtube.com/embed/swiQZv-K1Oc"
-          title="Las Grutas - Así es el Caribe de Río Negro"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+      <div class="video-embed" id="video-embed-youtube">
+        <button type="button" class="video-embed__facade" id="btn-cargar-youtube" aria-label="Reproducir video: Las Grutas, así es el Caribe de Río Negro">
+          <img src="https://img.youtube.com/vi/swiQZv-K1Oc/hqdefault.jpg" alt="Las Grutas - Así es el Caribe de Río Negro" loading="lazy" />
+          <span class="video-embed__play">▶</span>
+        </button>
       </div>
     </div>
   </section>
@@ -207,12 +204,12 @@
     <div class="contenedor">
       <h2 class="titulo-seccion">Cómo llegar</h2>
       <p class="subtitulo-seccion">Arroyo Salado 239, Las Grutas, Río Negro, Argentina.</p>
-      <iframe
-        src="https://www.google.com/maps?q=-40.7993473,-65.0669793&z=17&hl=es&output=embed"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Mapa de Mar Claro - Arroyo Salado 239, Las Grutas"
-      ></iframe>
+      <div class="mapa-embed" id="mapa-embed">
+        <button type="button" class="mapa-embed__facade" id="btn-cargar-mapa">
+          <span class="mapa-embed__icono">📍</span>
+          <span>Ver mapa interactivo</span>
+        </button>
+      </div>
     </div>
   </section>
 

@@ -634,6 +634,40 @@ section {
   border: 0;
 }
 
+.video-embed__facade {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.video-embed__facade img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-embed__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 76px;
+  height: 76px;
+  background: rgba(22, 66, 91, 0.75);
+  color: var(--blanco);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  padding-left: 6px;
+}
+
 /* =========================================
    VIDEOS PLAYA LA RINCONADA
    ========================================= */
@@ -706,6 +740,30 @@ section {
   border: 0;
   border-radius: var(--radio);
   box-shadow: var(--sombra);
+}
+
+.mapa-embed__facade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  margin: 0 auto;
+  border: none;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  background: var(--arena);
+  color: var(--azul-profundo);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mapa-embed__icono {
+  font-size: 2.5rem;
 }
 
 /* =========================================

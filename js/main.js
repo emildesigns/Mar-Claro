@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
   setupMenuMobile();
   setupHeroVideo();
   setupModalInfo();
+  setupYoutubeFacade();
+  setupMapaFacade();
 });
 
 // ---------- Modal de información del alojamiento ----------
@@ -67,6 +69,38 @@ function setupHeroVideo() {
   video.appendChild(source);
   video.load();
   video.play().catch(() => {});
+}
+
+// ---------- Video de YouTube (carga el iframe solo al hacer clic, sin cookies de terceros hasta entonces) ----------
+function setupYoutubeFacade() {
+  const contenedor = document.getElementById("video-embed-youtube");
+  const boton = document.getElementById("btn-cargar-youtube");
+  if (!contenedor || !boton) return;
+
+  boton.addEventListener("click", () => {
+    const iframe = document.createElement("iframe");
+    iframe.src = "https://www.youtube-nocookie.com/embed/swiQZv-K1Oc?autoplay=1";
+    iframe.title = "Las Grutas - Así es el Caribe de Río Negro";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+    contenedor.replaceChildren(iframe);
+  });
+}
+
+// ---------- Mapa de Google (carga el iframe solo al hacer clic, sin cookies de terceros hasta entonces) ----------
+function setupMapaFacade() {
+  const contenedor = document.getElementById("mapa-embed");
+  const boton = document.getElementById("btn-cargar-mapa");
+  if (!contenedor || !boton) return;
+
+  boton.addEventListener("click", () => {
+    const iframe = document.createElement("iframe");
+    iframe.src = "https://www.google.com/maps?q=-40.7993473,-65.0669793&z=17&hl=es&output=embed";
+    iframe.loading = "lazy";
+    iframe.referrerPolicy = "no-referrer-when-downgrade";
+    iframe.title = "Mapa de Mar Claro - Arroyo Salado 239, Las Grutas";
+    contenedor.replaceChildren(iframe);
+  });
 }
 
 // ---------- WhatsApp ----------
