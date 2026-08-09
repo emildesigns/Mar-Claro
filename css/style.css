@@ -635,6 +635,64 @@ section {
 }
 
 /* =========================================
+   VIDEOS PLAYA LA RINCONADA
+   ========================================= */
+.videos-rinconada {
+  text-align: center;
+  background: var(--arena);
+}
+
+.video-portada {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  border: none;
+  padding: 0;
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  cursor: pointer;
+}
+
+.video-portada img {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.video-portada:hover img {
+  transform: scale(1.03);
+}
+
+.video-portada__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 76px;
+  height: 76px;
+  background: rgba(22, 66, 91, 0.75);
+  color: var(--blanco);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  padding-left: 6px;
+}
+
+.video-lightbox__player {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  background: #000;
+}
+
+/* =========================================
    UBICACION / MAPA
    ========================================= */
 .ubicacion {

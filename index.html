@@ -185,6 +185,21 @@
     </div>
   </section>
 
+  <!-- VIDEOS PLAYA LA RINCONADA -->
+  <section class="videos-rinconada">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Videos de la playa La Rinconada</h2>
+      <p class="subtitulo-seccion">A 50 metros de los departamentos.</p>
+      <button type="button" class="video-portada" id="btn-abrir-videos-rinconada">
+        <picture>
+          <source srcset="img/videos-rinconada/portada.webp" type="image/webp" />
+          <img src="img/videos-rinconada/portada.jpg" alt="Playa La Rinconada" />
+        </picture>
+        <span class="video-portada__play">▶</span>
+      </button>
+    </div>
+  </section>
+
   <!-- UBICACION -->
   <section class="ubicacion" id="ubicacion">
     <div class="contenedor">
@@ -230,6 +245,14 @@
     <button class="lightbox__prev" id="lightbox-prev" aria-label="Anterior">‹</button>
     <img src="" alt="" class="lightbox__img" id="lightbox-img" />
     <button class="lightbox__next" id="lightbox-next" aria-label="Siguiente">›</button>
+  </div>
+
+  <!-- LIGHTBOX DE VIDEOS -->
+  <div class="lightbox video-lightbox" id="video-lightbox">
+    <button class="lightbox__cerrar" id="video-lightbox-cerrar" aria-label="Cerrar">✕</button>
+    <button class="lightbox__prev" id="video-lightbox-prev" aria-label="Video anterior">‹</button>
+    <video class="video-lightbox__player" id="video-lightbox-player" controls playsinline></video>
+    <button class="lightbox__next" id="video-lightbox-next" aria-label="Video siguiente">›</button>
   </div>
 
   <!-- MODAL INFO ALOJAMIENTO -->

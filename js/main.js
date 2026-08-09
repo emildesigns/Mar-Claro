@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderPanoramicas();
   renderLugares();
   setupLightbox();
+  setupVideoLightbox();
   setupMenuMobile();
   setupHeroVideo();
   setupModalInfo();
@@ -270,6 +271,72 @@ function setupLightbox() {
     },
     { passive: true }
   );
+}
+
+// ---------- Videos de la playa La Rinconada ----------
+function setupVideoLightbox() {
+  const btnAbrir = document.getElementById("btn-abrir-videos-rinconada");
+  const lightbox = document.getElementById("video-lightbox");
+  const player = document.getElementById("video-lightbox-player");
+  const btnCerrar = document.getElementById("video-lightbox-cerrar");
+  const btnPrev = document.getElementById("video-lightbox-prev");
+  const btnNext = document.getElementById("video-lightbox-next");
+  if (!btnAbrir || !lightbox || !player) return;
+
+  let indiceActual = 0;
+
+  function mostrar(index) {
+    indiceActual = (index + VIDEOS_RINCONADA.length) % VIDEOS_RINCONADA.length;
+    player.src = VIDEOS_RINCONADA[indiceActual];
+    player.play().catch(() => {});
+  }
+
+  function abrir() {
+    lightbox.classList.add("activo");
+    document.body.classList.add("no-scroll");
+    mostrar(0);
+    history.pushState({ videoLightboxAbierto: true }, "", "#videos");
+  }
+
+  function cerrarVisual() {
+    lightbox.classList.remove("activo");
+    document.body.classList.remove("no-scroll");
+    player.pause();
+    player.removeAttribute("src");
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    if (location.hash === "#videos") {
+      history.replaceState(null, "", location.pathname + location.search);
+    }
+  }
+
+  function cerrar() {
+    if (!lightbox.classList.contains("activo")) return;
+    if (history.state && history.state.videoLightboxAbierto) {
+      history.back();
+    } else {
+      cerrarVisual();
+    }
+  }
+
+  window.addEventListener("popstate", () => {
+    if (lightbox.classList.contains("activo")) cerrarVisual();
+  });
+
+  btnAbrir.addEventListener("click", abrir);
+  btnCerrar.addEventListener("click", cerrar);
+  btnPrev.addEventListener("click", () => mostrar(indiceActual - 1));
+  btnNext.addEventListener("click", () => mostrar(indiceActual + 1));
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) cerrar();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (!lightbox.classList.contains("activo")) return;
+    if (e.key === "Escape") cerrar();
+    if (e.key === "ArrowLeft") mostrar(indiceActual - 1);
+    if (e.key === "ArrowRight") mostrar(indiceActual + 1);
+  });
 }
 
 // ---------- Menú mobile ----------

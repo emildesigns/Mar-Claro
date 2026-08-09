@@ -152,6 +152,17 @@ const PANORAMICAS = [
 ];
 
 // -----------------------------
+// VIDEOS DE LA PLAYA LA RINCONADA
+// -----------------------------
+// Para agregar un video nuevo: subí el .mp4 a img/videos-rinconada/
+// y sumá su ruta a este array.
+const VIDEOS_RINCONADA = [
+  "img/videos-rinconada/1.mp4",
+  "img/videos-rinconada/2.mp4",
+  "img/videos-rinconada/3.mp4",
+];
+
+// -----------------------------
 // ENLACES DEL PUEBLO
 // -----------------------------
 // Guías externas (TripAdvisor, turismo oficial, etc). Para agregar una,
