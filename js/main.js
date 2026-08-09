@@ -177,12 +177,19 @@ function setupLightbox() {
     lightboxImg.src = fotosActuales[indiceActual];
     lightbox.classList.add("activo");
     document.body.classList.add("no-scroll");
-    history.pushState({ lightboxAbierto: true }, "");
+    // Se usa un hash distinto (no la misma URL) porque algunos navegadores
+    // mobile no disparan el back-button de forma confiable si el estado
+    // empujado tiene exactamente la misma URL que el anterior.
+    history.pushState({ lightboxAbierto: true }, "", "#galeria");
   }
 
   function cerrarVisual() {
     lightbox.classList.remove("activo");
     document.body.classList.remove("no-scroll");
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    if (location.hash === "#galeria") {
+      history.replaceState(null, "", location.pathname + location.search);
+    }
   }
 
   function cerrar() {
