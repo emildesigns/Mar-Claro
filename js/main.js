@@ -177,17 +177,29 @@ function setupLightbox() {
     lightboxImg.src = fotosActuales[indiceActual];
     lightbox.classList.add("activo");
     document.body.classList.add("no-scroll");
+    history.pushState({ lightboxAbierto: true }, "");
+  }
+
+  function cerrarVisual() {
+    lightbox.classList.remove("activo");
+    document.body.classList.remove("no-scroll");
   }
 
   function cerrar() {
-    lightbox.classList.remove("activo");
-    document.body.classList.remove("no-scroll");
+    if (!lightbox.classList.contains("activo")) return;
+    if (history.state && history.state.lightboxAbierto) {
+      history.back();
+    } else {
+      cerrarVisual();
+    }
   }
 
   function mostrar(delta) {
     indiceActual = (indiceActual + delta + fotosActuales.length) % fotosActuales.length;
     lightboxImg.src = fotosActuales[indiceActual];
   }
+
+  window.addEventListener("popstate", cerrarVisual);
 
   document.addEventListener("click", (e) => {
     const target = e.target.closest(".js-abrir-lightbox");
@@ -200,6 +212,7 @@ function setupLightbox() {
   btnCerrar.addEventListener("click", cerrar);
   btnPrev.addEventListener("click", () => mostrar(-1));
   btnNext.addEventListener("click", () => mostrar(1));
+  lightboxImg.addEventListener("click", () => mostrar(1));
 
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) cerrar();

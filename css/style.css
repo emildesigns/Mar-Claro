@@ -722,6 +722,7 @@ section {
   max-height: 85vh;
   border-radius: 8px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .lightbox__cerrar,
@@ -807,5 +808,20 @@ section {
 
   .hero-video {
     display: block;
+  }
+
+  .lightbox__prev,
+  .lightbox__next {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+  }
+
+  .lightbox__prev {
+    left: -15px;
+  }
+
+  .lightbox__next {
+    right: -15px;
   }
 }
