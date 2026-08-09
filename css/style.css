@@ -50,6 +50,13 @@ picture {
   display: contents;
 }
 
+/* Dentro de una grilla, "display: contents" en un item directo confunde
+   a algunos navegadores y genera huecos. Ahi el <picture> se comporta
+   como un bloque normal en vez de "desaparecer". */
+.panoramicas-grid picture {
+  display: block;
+}
+
 a {
   text-decoration: none;
   color: inherit;
