@@ -149,6 +149,15 @@ const PANORAMICAS = [
   { src: "img/panoramica/playa-19.jpg", alt: "Mar y rocas en la costa de Las Grutas" },
   { src: "img/panoramica/playa-20.jpg", alt: "Vista de la costanera de Las Grutas" },
   { src: "img/panoramica/playa-21.jpg", alt: "Puesta de sol sobre el mar en Las Grutas" },
+  { src: "img/panoramica/playa-22.jpg", alt: "Bajada de madera a la playa junto a un restaurante frente al mar en Las Grutas" },
+  { src: "img/panoramica/playa-23.jpg", alt: "Atardecer sobre las rocas de la playa en Las Grutas" },
+  { src: "img/panoramica/playa-24.jpg", alt: "Vista panorámica de la costa con olas y casas sobre el acantilado en Las Grutas" },
+  { src: "img/panoramica/playa-25.jpg", alt: "Costanera con baranda blanca y vista al mar en Las Grutas" },
+  { src: "img/panoramica/playa-26.jpg", alt: "Turistas bañándose en el mar cálido de Las Grutas" },
+  { src: "img/panoramica/playa-27.jpg", alt: "Vista aérea de la playa y el pueblo de Las Grutas" },
+  { src: "img/panoramica/playa-28.jpg", alt: "Acantilados y playa tranquila en Las Grutas" },
+  { src: "img/panoramica/playa-29.jpg", alt: "Bañistas junto a las rocas en la playa de Las Grutas" },
+  { src: "img/panoramica/playa-30.jpg", alt: "Vista aérea de la playa llena de sombrillas en temporada alta en Las Grutas" },
 ];
 
 // -----------------------------
