@@ -65,7 +65,7 @@ const DEPARTAMENTOS = [
     ambientes: "1 dormitorio",
     ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
-      "Departamento amplio, con dormitorio sommier queen, ideal para un placentero descanso.",
+      "Departamento amplio para 4 personas, con dormitorio sommier queen, ideal para un placentero descanso.",
     comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV", "Aire acondicionado", "Estacionamiento techado"],
     fotos: [
       "img/departamentos/depto-3/1.jpg",
@@ -85,7 +85,7 @@ const DEPARTAMENTOS = [
     ambientes: "2 dormitorios",
     ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
-      "Ideal para grupos de amigos o familias, con espacio exterior y parrilla privada.",
+      "Departamento para 4 personas, ideal para grupos de amigos o familias, con espacio exterior y parrilla privada.",
     comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV", "Aire acondicionado", "Estacionamiento techado"],
     fotos: [
       "img/departamentos/depto-4/1.jpg",
@@ -104,7 +104,7 @@ const DEPARTAMENTOS = [
     ambientes: "2 dormitorios",
     ubicacion: "A 50 mts de la bajada a la playa La Rinconada",
     descripcion:
-      "Departamento renovado, tranquilo, ideal para descansar cerca de la naturaleza y la costa.",
+      "Departamento renovado para 6 personas, tranquilo, ideal para descansar cerca de la naturaleza y la costa.",
     comodidades: ["Baño", "Cocina", "Comedor", "Asador", "Wifi", "DirecTV", "Aire acondicionado", "Estacionamiento techado"],
     fotos: [
       "img/departamentos/depto-5/1.jpg",
