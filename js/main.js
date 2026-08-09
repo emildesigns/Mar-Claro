@@ -322,6 +322,14 @@ function setupVideoLightbox() {
     if (lightbox.classList.contains("activo")) cerrarVisual();
   });
 
+  player.addEventListener("ended", () => {
+    if (indiceActual < VIDEOS_RINCONADA.length - 1) {
+      mostrar(indiceActual + 1);
+    } else {
+      cerrar();
+    }
+  });
+
   btnAbrir.addEventListener("click", abrir);
   btnCerrar.addEventListener("click", cerrar);
   btnPrev.addEventListener("click", () => mostrar(indiceActual - 1));
