@@ -4,6 +4,11 @@
   maneja el lightbox de fotos, el menú mobile y los links de WhatsApp.
 */
 
+// Convierte "img/foo/bar.jpg" en "img/foo/bar.webp" (misma foto, formato mas liviano)
+function aWebp(rutaJpg) {
+  return rutaJpg.replace(/\.jpe?g$/i, ".webp");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("nombre-sitio-footer").textContent = NOMBRE_SITIO;
   document.getElementById("anio-actual").textContent = new Date().getFullYear();
@@ -85,19 +90,23 @@ function renderDepartamentos() {
       .map((c) => `<li>${c}</li>`)
       .join("");
 
-    const fotosData = depto.fotos.join("|");
+    const fotosWebp = depto.fotos.map(aWebp);
+    const fotosData = fotosWebp.join("|");
 
     return `
       <article class="card-depto" data-id="${depto.id}">
         <div class="card-depto__foto">
-          <img
-            src="${depto.fotos[0]}"
-            alt="${depto.nombre}"
-            loading="lazy"
-            class="js-abrir-lightbox"
-            data-fotos="${fotosData}"
-            data-index="0"
-          />
+          <picture>
+            <source srcset="${fotosWebp[0]}" type="image/webp" />
+            <img
+              src="${depto.fotos[0]}"
+              alt="${depto.nombre}"
+              loading="lazy"
+              class="js-abrir-lightbox"
+              data-fotos="${fotosData}"
+              data-index="0"
+            />
+          </picture>
           <span class="card-depto__capacidad">👥 ${depto.capacidad} personas</span>
         </div>
         <div class="card-depto__info">
@@ -125,18 +134,21 @@ function renderPanoramicas() {
   const cont = document.getElementById("panoramicas-grid");
   if (!cont) return;
 
-  const fotosData = PANORAMICAS.map((p) => p.src).join("|");
+  const fotosData = PANORAMICAS.map((p) => aWebp(p.src)).join("|");
 
   cont.innerHTML = PANORAMICAS.map(
     (foto, index) => `
-      <img
-        src="${foto.src}"
-        alt="${foto.alt}"
-        loading="lazy"
-        class="panoramica-item js-abrir-lightbox"
-        data-fotos="${fotosData}"
-        data-index="${index}"
-      />
+      <picture>
+        <source srcset="${aWebp(foto.src)}" type="image/webp" />
+        <img
+          src="${foto.src}"
+          alt="${foto.alt}"
+          loading="lazy"
+          class="panoramica-item js-abrir-lightbox"
+          data-fotos="${fotosData}"
+          data-index="${index}"
+        />
+      </picture>
     `
   ).join("");
 }

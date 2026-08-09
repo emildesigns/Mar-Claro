@@ -54,7 +54,24 @@
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    media="print"
+    onload="this.media='all'; this.onload=null;"
+  />
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+  </noscript>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -92,7 +109,10 @@
 
   <!-- HERO -->
   <section class="hero" id="inicio">
-    <img src="img/hero/costa-hero.jpg" alt="" class="hero-bg" width="1600" height="900" />
+    <picture>
+      <source srcset="img/hero/costa-hero.webp" type="image/webp" />
+      <img src="img/hero/costa-hero.jpg" alt="" class="hero-bg" width="1600" height="900" />
+    </picture>
     <video class="hero-video" id="hero-video" muted loop playsinline preload="none" aria-hidden="true"></video>
     <div class="hero-overlay"></div>
     <div class="hero__contenido">

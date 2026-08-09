@@ -43,6 +43,13 @@ img {
   display: block;
 }
 
+/* El wrapper <picture> no debe afectar el layout: el <img> de adentro
+   sigue respondiendo a las mismas reglas CSS que antes (object-fit,
+   position:absolute, etc). */
+picture {
+  display: contents;
+}
+
 a {
   text-decoration: none;
   color: inherit;
