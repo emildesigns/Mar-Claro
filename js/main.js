@@ -9,6 +9,11 @@ function aWebp(rutaJpg) {
   return rutaJpg.replace(/\.jpe?g$/i, ".webp");
 }
 
+// Convierte "img/foo/bar.jpg" en "img/foo/bar-thumb.webp" (version chica para grillas)
+function aThumb(rutaJpg) {
+  return rutaJpg.replace(/\.jpe?g$/i, "-thumb.webp");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("nombre-sitio-footer").textContent = NOMBRE_SITIO;
   document.getElementById("anio-actual").textContent = new Date().getFullYear();
@@ -132,7 +137,7 @@ function renderDepartamentos() {
       <article class="card-depto" data-id="${depto.id}">
         <div class="card-depto__foto">
           <picture>
-            <source srcset="${fotosWebp[0]}" type="image/webp" />
+            <source srcset="${aThumb(depto.fotos[0])}" type="image/webp" />
             <img
               src="${depto.fotos[0]}"
               alt="${depto.nombre}"
@@ -174,7 +179,7 @@ function renderPanoramicas() {
   cont.innerHTML = PANORAMICAS.map(
     (foto, index) => `
       <picture>
-        <source srcset="${aWebp(foto.src)}" type="image/webp" />
+        <source srcset="${aThumb(foto.src)}" type="image/webp" />
         <img
           src="${foto.src}"
           alt="${foto.alt}"
