@@ -15,7 +15,7 @@ function aThumb(rutaJpg) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("nombre-sitio-footer").textContent = NOMBRE_SITIO;
+  document.getElementById("nombre-sitio-footer").textContent = `${NOMBRE_SITIO} · Alojamientos en Las Grutas`;
   document.getElementById("anio-actual").textContent = new Date().getFullYear();
 
   setupWhatsappLinks();
