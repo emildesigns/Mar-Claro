@@ -29,7 +29,60 @@ document.addEventListener("DOMContentLoaded", () => {
   setupModalInfo();
   setupYoutubeFacade();
   setupMapaFacade();
+  setupVideoBienvenida();
 });
+
+// ---------- Video de bienvenida (se abre al cargar la página) ----------
+function setupVideoBienvenida() {
+  const modal = document.getElementById("video-bienvenida");
+  const player = document.getElementById("video-bienvenida-player");
+  const btnCerrar = document.getElementById("video-bienvenida-cerrar");
+  const btnSonido = document.getElementById("video-bienvenida-sonido");
+  if (!modal || !player || !btnCerrar) return;
+
+  function cerrar() {
+    if (!modal.classList.contains("activo")) return;
+    modal.classList.remove("activo");
+    document.body.classList.remove("no-scroll");
+    player.pause();
+    player.removeAttribute("src");
+    player.load();
+  }
+
+  function activarSonido() {
+    player.muted = false;
+    btnSonido.hidden = true;
+  }
+
+  modal.classList.add("activo");
+  document.body.classList.add("no-scroll");
+
+  // Intenta reproducir con sonido. Si el navegador lo bloquea (política de
+  // autoplay), reproduce sin sonido y muestra el botón "Activar sonido".
+  player.muted = false;
+  player.play().catch(() => {
+    player.muted = true;
+    btnSonido.hidden = false;
+    player.play().catch(() => {});
+  });
+
+  player.addEventListener("ended", cerrar);
+  btnCerrar.addEventListener("click", cerrar);
+  btnSonido.addEventListener("click", activarSonido);
+
+  // Al tocar el video (sin sonido) se activa el audio
+  player.addEventListener("click", () => {
+    if (player.muted) activarSonido();
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) cerrar();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") cerrar();
+  });
+}
 
 // ---------- Modal de información del alojamiento ----------
 function setupModalInfo() {

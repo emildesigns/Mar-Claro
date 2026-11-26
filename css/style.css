@@ -726,6 +726,37 @@ section {
   background: #000;
 }
 
+/* Video de bienvenida */
+.video-bienvenida {
+  z-index: 300;
+}
+
+.video-bienvenida__marco {
+  position: relative;
+  display: flex;
+}
+
+.video-bienvenida__sonido {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 999px;
+  background: var(--blanco);
+  color: var(--azul-profundo);
+  font-family: var(--fuente);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.video-bienvenida__sonido[hidden] {
+  display: none;
+}
+
 /* =========================================
    UBICACION / MAPA
    ========================================= */

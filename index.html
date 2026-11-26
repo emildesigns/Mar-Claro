@@ -265,6 +265,15 @@
     <button class="lightbox__next" id="video-lightbox-next" aria-label="Video siguiente">›</button>
   </div>
 
+  <!-- VIDEO DE BIENVENIDA (se abre al cargar la página) -->
+  <div class="lightbox video-bienvenida" id="video-bienvenida" role="dialog" aria-modal="true" aria-label="Video de bienvenida">
+    <button class="lightbox__cerrar" id="video-bienvenida-cerrar" aria-label="Cerrar video">✕</button>
+    <div class="video-bienvenida__marco">
+      <video class="video-lightbox__player" id="video-bienvenida-player" src="video/bienvenida.mp4" playsinline preload="auto"></video>
+      <button type="button" class="video-bienvenida__sonido" id="video-bienvenida-sonido" hidden>🔊 Activar sonido</button>
+    </div>
+  </div>
+
   <!-- MODAL INFO ALOJAMIENTO -->
   <div class="modal-info" id="modal-info">
     <div class="modal-info__contenido">
